@@ -37,6 +37,7 @@ header
 {
     text-align: center;
     margin: auto 2em;
+    font-weight: 600;
 }
 
 section 
@@ -56,19 +57,30 @@ p
 
 hr 
 {
-    border: none;
-    background-color: lightgray;
+    border: purple;
+    background-color: purple;
     height: 1px;
 }
 
-h1, h2, h3 
+h1
 {
-    font-weight: 100;
+    font-weight: 750;
     margin-bottom: 0;
 }
 
+h2
+{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h3
+{
+    font-weight: 500;
+    margin-bottom: 0;   
+}
 
 #mainLeft 
 {
-    border-right: 1px solid lightgray;
+    border-right: 1px solid purple;
 }

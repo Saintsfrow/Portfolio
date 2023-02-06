@@ -12,18 +12,24 @@ h1
     letter-spacing: .6em;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-weight: 750;
+    margin-bottom: 0;
 }
 
 h2 
 {
     font-size: 1.5em;
     padding-bottom: 1em;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 h3 
 {
     font-size: 1em;
     padding-bottom: 1em;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 main 
@@ -60,24 +66,6 @@ hr
     border: purple;
     background-color: purple;
     height: 1px;
-}
-
-h1
-{
-    font-weight: 750;
-    margin-bottom: 0;
-}
-
-h2
-{
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-h3
-{
-    font-weight: 500;
-    margin-bottom: 0;   
 }
 
 #mainLeft 

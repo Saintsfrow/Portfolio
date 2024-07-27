@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Santhosh Parthiban - Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="container">
+                <h1>SANTHOSH PARTHIBAN</h1>
+                <p>Mechatronics Engineering Student</p>
+                <nav>
+                    <ul id="navList">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button id="menuToggle" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2 class="fade-in">About</h2>
+                <p class="fade-in">I am a junior B.Tech student at Puducherry Technological University in the field of Mechatronics. I have a working knowledge of C, C++, and Python, with strong leadership qualities and communication skills.</p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="container">
+                <h2 class="fade-in">Skills</h2>
+                <ul class="fade-in">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="education">
+            <div class="container">
+                <h2 class="fade-in">Education</h2>
+                <div class="fade-in">
+                    <h3>Puducherry Technological University</h3>
+                    <p>B.Tech in Mechatronics, 2020-2024</p>
+                </div>
+                <div class="fade-in">
+                    <h3>Petit Seminaire Higher Secondary School</h3>
+                    <p>2006-2020</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="container">
+                <h2 class="fade-in">Projects</h2>
+                <ul class="fade-in">
+                    <li><strong>Project 1:</strong> Description of the project.</li>
+                    <li><strong>Project 2:</strong> Description of the project.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="hobbies">
+            <div class="container">
+                <h2 class="fade-in">Hobbies</h2>
+                <ul class="fade-in">
+                    <li>Badminton</li>
+                    <li>Coding</li>
+                    <li>Gaming</li>
+                    <li>Stargazing</li>
+                    <li>Comics</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2 class="fade-in">Contact</h2>
+                <p class="fade-in">Feel free to reach out via email or use the form below:</p>
+                <form id="contactForm" action="mailto:santhoshparthiban2003@gmail.com" method="post" enctype="text/plain">
+                    <label for="name" class="fade-in">Name:</label>
+                    <input type="text" id="name" name="name" class="fade-in" required>
+                
+                    <label for="email" class="fade-in">Email:</label>
+                    <input type="email" id="email" name="email" class="fade-in" required>
+                
+                    <label for="message" class="fade-in">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="fade-in" required></textarea>
+                
+                    <button type="submit" class="fade-in">Send</button>
+                </form>
+                <div class="social-links">
+                    <h2 class="fade-in">Connect with me socially via</h2>
+                    <p class="fade-in">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> 
+                        Email: <a href="mailto:santhoshparthiban2003@gmail.com">santhoshparthiban2003@gmail.com</a>
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
+                    </p>
+                    
+                    <p class="fade-in">
+                        <i class="fab fa-github" aria-hidden="true"></i> 
+                        GitHub: <a target="_blank" href="https://www.github.com/Saintsfrow">Saintsfrow</a>
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
+                    </p>
+                    
+                    <p class="fade-in">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i> 
+                        LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/santhosh-parthiban-92736221a">Santhosh Parthiban</a>
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
+                    </p>
+                    
+                    <p class="fade-in">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> 
+                        Instagram: <a target="_blank" href="https://www.instagram.com/saintsfrow/">Saintsfrow</a>
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
+                    </p>
+                    
+                    <p class="fade-in">
+                        <i class="fab fa-twitter" aria-hidden="true"></i> 
+                        Twitter: <a target="_blank" href="https://twitter.com/saintsfrow">Saintsfrow</a>
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
+                    </p>                                 
+                </div>
+            </div>
+        </section>             
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Santhosh Parthiban. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

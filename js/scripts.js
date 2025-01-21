@@ -43,4 +43,17 @@ document.addEventListener('DOMContentLoaded', function () {
     fadeElements.forEach(element => {
         observer.observe(element);
     });
+
+    // Dynamic Text Effect
+    const words = ["a Mechatronics Engineer","a Programmer", "a Gamer", "a Tech Enthusiast", "a Photographer"];
+    let index = 0;
+    const dynamicText = document.querySelector(".dynamic-text");
+
+    function updateText() {
+        dynamicText.textContent = words[index];
+        index = (index + 1) % words.length; // Loop back to the first word
+    }
+
+    setInterval(updateText, 2000); // Change text every 2 seconds
+    updateText(); // Initialize text immediately
 });

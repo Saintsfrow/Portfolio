@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Menu toggle functionality
     const menuToggle = document.getElementById('menuToggle');
     const navList = document.getElementById('navList');
     const scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -9,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navList.classList.toggle('show');
     });
 
-    // Scroll to top button functionality
+    // Show or hide the scroll to top button
     window.addEventListener('scroll', function () {
         if (window.scrollY > 200) {
             scrollTopBtn.style.display = 'block';
@@ -18,23 +17,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Scroll to top when button is clicked
     scrollTopBtn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Fade-in effect using Intersection Observer
+    // Intersection Observer to add fade-in effect
     const fadeElements = document.querySelectorAll('.fade-in');
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.1 // Trigger when 10% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+                observer.unobserve(entry.target); // Stop observing once the element is visible
             }
         });
     }, observerOptions);
@@ -43,16 +44,16 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(element);
     });
 
-    // Dynamic text effect
-    const words = ["a Mechatronics Engineer", "a Programmer", "a Gamer", "a Tech Enthusiast", "a Photographer"];
+    // Dynamic Text Effect
+    const words = ["a Mechatronics Engineer","a Programmer", "a Gamer", "a Tech Enthusiast", "a Photographer"];
     let index = 0;
     const dynamicText = document.querySelector(".dynamic-text");
 
     function updateText() {
         dynamicText.textContent = words[index];
-        index = (index + 1) % words.length;
+        index = (index + 1) % words.length; // Loop back to the first word
     }
 
-    setInterval(updateText, 2000);
-    updateText();
+    setInterval(updateText, 2000); // Change text every 2 seconds
+    updateText(); // Initialize text immediately
 });

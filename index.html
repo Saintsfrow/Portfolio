@@ -8,7 +8,17 @@
     <title>Santhosh Parthiban - Portfolio</title>
 </head>
 <body>
-    <header>
+    <!-- Warning Screen -->
+    <div id="warning-screen">
+        <div class="warning-content">
+            <h1>Warning</h1>
+            <p>This website contains content intended for mature audiences. Please proceed only if you agree.</p>
+            <button id="proceed-btn">I Agree</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <header id="main-content">
         <div class="hero">
             <div class="container">
                 <h1>SANTHOSH PARTHIBAN</h1>
@@ -28,6 +38,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <section id="about">
             <div class="container">
@@ -135,8 +146,9 @@
                     </p>                                 
                 </div>
             </div>
-        </section>             
+        </section>
     </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Santhosh Parthiban. All rights reserved.</p>
@@ -146,66 +158,5 @@
         <i class="fas fa-chevron-up"></i>
     </button>
     <script src="js/scripts.js"></script>
-</body>
-</html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warning Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #warning {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f8d7da;
-            color: #721c24;
-            text-align: center;
-        }
-        #index {
-            display: none;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #721c24;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #a71d2a;
-        }
-    </style>
-</head>
-<body>
-    <!-- Warning Content -->
-    <div id="warning">
-        <h1>Warning</h1>
-        <p>Please read the following terms before proceeding to the main page.</p>
-        <button onclick="showIndex()">I Agree, Proceed</button>
-    </div>
-
-    <!-- Main Index Content -->
-    <div id="index">
-        <h1>Welcome to the Main Page</h1>
-        <p>This is your main content.</p>
-    </div>
-
-    <script>
-        function showIndex() {
-            // Hide the warning content and show the index content
-            document.getElementById('warning').style.display = 'none';
-            document.getElementById('index').style.display = 'block';
-        }
-    </script>
 </body>
 </html>

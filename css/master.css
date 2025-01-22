@@ -161,7 +161,7 @@ footer a:hover {
     width: 50px; 
     height: 30px; 
     border-radius: 5px; 
-    background-color: #6a0dad; 
+    background-color: #4b0082; 
     color: #fff; 
     border: none; 
     display: flex;
@@ -311,3 +311,55 @@ form button:hover {
         vertical-align: middle;
     }
 }    
+
+/* Warning Screen Styling */
+#warning-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 1000;
+    text-align: center;
+}
+
+.warning-content {
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.warning-content h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.warning-content p {
+    margin-bottom: 20px;
+}
+
+#proceed-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4b0082;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#proceed-btn:hover {
+    background-color: #6a0dad;
+}
+
+/* Initially hide main content */
+#main-content {
+    display: none;
+}

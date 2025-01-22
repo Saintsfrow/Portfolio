@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menuToggle');
     const navList = document.getElementById('navList');
     const scrollTopBtn = document.getElementById('scrollTopBtn');
-
+    const header = document.querySelector('header');
+    
     // Toggle mobile menu
     menuToggle.addEventListener('click', function () {
         navList.classList.toggle('show');
@@ -15,6 +16,28 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             scrollTopBtn.style.display = 'none';
         }
+        
+        // Keep header fixed when scrolling
+        if (window.scrollY > 0) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+
+        // Highlight active section
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top >= 0 && rect.top < 100) {
+                const id = section.getAttribute('id');
+                document.querySelectorAll('nav ul li a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
     });
 
     // Scroll to top when button is clicked
@@ -24,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Intersection Observer to add fade-in effect
     const fadeElements = document.querySelectorAll('.fade-in');
-
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -45,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Dynamic Text Effect
-    const words = ["a Mechatronics Engineer","a Programmer", "a Gamer", "a Tech Enthusiast", "a Photographer"];
+    const words = ["a Mechatronics Engineer", "a Programmer", "a Gamer", "a Tech Enthusiast", "a Photographer"];
     let index = 0;
     const dynamicText = document.querySelector(".dynamic-text");
 

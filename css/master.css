@@ -176,33 +176,8 @@ footer a:hover {
 }
 
 #scrollTopBtn:hover {
-    box-shadow: 0 0 15px 5px rgba(106, 13, 173, 0.75); 
+    transform: scale(1.1) 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     .hero h1 {
@@ -297,6 +272,7 @@ form button {
 
 form button:hover {
     background-color: #6a0dad;
+    transform: scale(1.1)
 }
 
 /* Social Links Styles */
@@ -335,3 +311,29 @@ form button:hover {
         vertical-align: middle;
     }
 }    
+
+.biography {
+    padding: 2em 0;
+}
+
+.bio-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 2em; /* Space between columns */
+    justify-content: center; /* Center columns horizontally */
+}
+
+.bio-column {
+    flex: 1; /* Allow columns to grow equally */
+    min-width: 300px; /* Minimum width to maintain layout */
+    background-color: #fff; /* Background color for each column */
+    padding: 1.5em; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+h3 {
+    color: #4b0082; /* Use your theme color */
+    margin-bottom: 0.5em;
+}
+
